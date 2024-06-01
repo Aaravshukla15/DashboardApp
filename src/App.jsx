@@ -2,6 +2,8 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import data from './data/data.json';
 import Dashboard from './components/Dashboard';
+import theme from './theme';
+
 
 
 const GlobalStyle = createGlobalStyle`
@@ -12,12 +14,12 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const theme = {
-  colors: {
-    primary: '#61dafb',
-    secondary: '#282c34',
-  },
-};
+// const theme = {
+//   colors: {
+//     primary: '#61dafb',
+//     secondary: '#282c34',
+//   },
+// };
 
 const App = () => {
   // Parsing and preparing data for graphs
